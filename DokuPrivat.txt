@@ -1,0 +1,6 @@
+------------------------------------------------------------
+Poetry			Library-Sammlung
+------------------------------------------------------------
+poetry new sinnvollername		# poetry Ordner Anlegen
+poetry --version			# Version anzeigen
+
