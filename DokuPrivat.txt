@@ -1,8 +1,14 @@
-------------------------------------------------------------
+----------------------------------------------------------------------------------
 Poetry			Library-Sammlung
-------------------------------------------------------------
+----------------------------------------------------------------------------------
 poetry new sinnvollername		# poetry Ordner Anlegen
 poetry --version			# Version anzeigen
 poetry add numpy			# Bibliothek hinzufuegen
 poetry update				# depency updaten
-poetry install				# istalliere die Abhängigkeiten
+poetry install				# installiere die Abhängigkeiten
+
+----------------------------------------------------------------------------------
+VS-Code		
+----------------------------------------------------------------------------------
+CTRL+Shift+P --> Python: create enviroment --> venv	# bei Import Problemen (openCV)
+
