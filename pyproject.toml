@@ -1,12 +1,15 @@
 [tool.poetry]
-name = "pattern-reconizer"
+name = "pattern-recog-tz"
 version = "0.1.0"
 description = ""
-authors = ["pepetoni246 <117388438+pepetoni246@users.noreply.github.com>"]
+authors = ["CEDES\\ksa <klims.saikins@cedes.com>"]
 readme = "README.md"
+packages = [{include = "pattern_recog_tz"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
+opencv-python = "^4.8.0.76"
+matplotlib = "^3.8.0"
 
 
 [build-system]
