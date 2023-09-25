@@ -16,14 +16,14 @@ flowchart LR
 ```mermaid
 flowchart TB
     subgraph Presentation Layer
-    A["Image"]
+    A("Image")
     end
     subgraph Buisness Layer
-    B["image processor"]
-    C["csv writer"]
+    B("image processor")
+    C("csv writer")
     end
     subgraph Persistence Layer
-    D["csv data"]
+    D("csv data")
     end
     A -.->B
     B -.->C
