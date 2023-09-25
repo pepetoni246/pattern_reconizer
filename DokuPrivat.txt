@@ -12,3 +12,6 @@ VS-Code
 ----------------------------------------------------------------------------------
 CTRL+Shift+P --> Python: create enviroment --> venv	# bei Import Problemen (openCV)
 
+
+.ignore erstellen
+
