@@ -11,7 +11,7 @@ flowchart LR
     test image`")
     E --> |read data| B
 ```
-## Layer Pattern
+## Layered Pattern
 
 ```mermaid
 flowchart TB
