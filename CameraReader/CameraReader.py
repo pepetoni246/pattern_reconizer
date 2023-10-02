@@ -8,6 +8,8 @@ class Camera:
             print("Kamera konnte nicht geöffnet werden.")
             exit()
 
-    def getImage(self):
+    def getImage(self, app):
         ret, frame = self.camera.read()
-        cv2.imshow('Kamera', frame)
+        #cv2.imshow('Kamera', frame)
+        app.image_processor.process(frame)
+        return frame
