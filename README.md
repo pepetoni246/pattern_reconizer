@@ -20,16 +20,22 @@ flowchart TB
     end
     subgraph Buisness Layer
     B("image processor")
-    C("csv writer")
+    C("csv Manager")
     end
     subgraph Persistence Layer
     D("csv data")
     end
-    A -.->B
-    B -.->C
-    C -.->D
+    A -->B
+    B -->C
+    C -->D
 ```
-## 
+## Klassen
+### CSVmanager
+#### Init
+Erstellt eine CSV Datei "patternData.csv" mit den Spalten timestamp, Pattern name, color. 
+#### writeCSV
+Die Funktion writeCSV öffnet die zuvor erstellte csv Datei und schreibt die Daten des self.image.processor in diese Datei. Dazu schreibt er zuerst den timestamp dann den patternName und anschliessend die patternColor, jeweils mit Komma separiert, rein.
+
 
 
 
