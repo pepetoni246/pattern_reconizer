@@ -10,6 +10,8 @@ packages = [{include = "pattern_recog_tz"}]
 python = "^3.10"
 opencv-python = "^4.8.0.76"
 matplotlib = "^3.8.0"
+ipython = "^8.15.0"
+sympy = "^1.12"
 
 
 [build-system]
