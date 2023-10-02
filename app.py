@@ -20,7 +20,7 @@ class App:
                 pattern_list = self.image_processor.process(frame)
                 for pattern in pattern_list:
                     print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
-                    CSVmanager.writeCSV({pattern.name})
+                    CSVmanager.writeCSV(pattern.name, pattern.color)
                 self.visualizer.visualize(frame, pattern_list)
 
                 if cv2.waitKey(1) & 0xFF == ord("q"):
