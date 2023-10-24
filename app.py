@@ -19,12 +19,13 @@ class App:
         try:
             while True:
                 #frame = cv2.imread("assets/test_image.JPG", cv2.IMREAD_COLOR)
-                #pattern_list = self.image_processor.process(frame)
-                #for pattern in pattern_list:
-                    #print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
-                    #CSVmanager.writeCSV(pattern.name, pattern.color)
-                #self.visualizer.visualize(frame, pattern_list)
-                self.camera.getImage(self)
+                frame=self.camera.getImage(self)
+                pattern_list = self.image_processor.process(frame)
+                for pattern in pattern_list:
+                    print(f"Pattern name: {pattern.name}, Color: {pattern.color}")
+                    CSVmanager.writeCSV(pattern.name, pattern.color)
+                self.visualizer.visualize(frame, pattern_list)
+                
                 
                 if cv2.waitKey(1) & 0xFF == ord("q"):
                     break
