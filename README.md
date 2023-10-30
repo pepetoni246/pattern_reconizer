@@ -63,6 +63,33 @@ Die Kamera ausgelesen und in einem seperaten Fenster geöffnet. Die Mustererkenn
 Diese Klassen haben wir auf Grund fehlender Bildverarbeitungskenntnissen von Klims erhalten.
 
 ## get it started
+### notwendige Extentions
+Die Software wurde in VS-Code in Python geschrieben und getestet.
+Um die Dokumentation sauber lesen zu können müssen folgende Extentions in VS Code installiert werden:
+- Markdown All in One
+- Markdown Preview Mermaid Support
+### PC-Einstellungen
+Um die Software auszuführen muss die Webcam des Laptops aktiviert und freigegeben sein. Falls zwei Kameras vorhanden sind, kann dies bei der Klasse Kamera im camera_index eingestellt werden. 
+- camera_index = 0 -> Webcam des Laptops
+- camera_index = 1 -> zweite Kamera 
+### Poetry
+Um sicherzustellen, das alle nötigen Module in der richtigen Version installiert werden kann Poetry verwendet werden. Dazu müssen folgende Schritte ausgeführt werden: https://python-poetry.org/docs/
+
+1. Poerty via Powershell installieren
+2. Poetry zu deinem Systempfad hinzufügen
+3. Poerty updaten
+
+Die verlinkte Webseite enthält alle Schritte in detaillierter Form.
+###  Erster Start
+1. Projekt im VS Code starten
+2. Terminal öffnen
+3. Poetry install ausführen
+4. Poetry update ausführen
+5. Environement einstellen: crtl+shift+p drücken -> Python Create Environment auswählen -> venv (virtual environment)
+6. app.py öffnen
+7. play drücken
+
+Bei erneutem Ausführen müssen die Schritte 2.-5. nicht mehr ausgeführt werden.
 
 
 
